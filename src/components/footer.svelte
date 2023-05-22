@@ -94,18 +94,15 @@ async function introAnimations() {
                     </p>
                 {:else}
                     <p class="large-text" bind:this={statusElem}>
-                        i am available for freelance work after <br> {fetchedData.availablity_date}.
+                        Vous pouvez aussi me contacter sur mon téléphone <br> {fetchedData.availablity_date}.
                     </p>
                 {/if}
             {/await}
-            <a class="button large-text" bind:this={fullEmailLinkElem} href="mailto:musabhassan04@gmail.com" target="_blank">musabhassan04@gmail.com</a>
+            <a class="button large-text" bind:this={fullEmailLinkElem} href="stephanie.boulenger@gmail.com" target="_blank">0788050719</a>
         </div>
         
         <div class="credits-wrapper" bind:this={creditsElem}>
             <p class="year">© {currentYear}</p>
-            <p class="credits">
-                designed and developed by musab hassan<br>this webste is open source on github
-            </p>
         </div>
     </div>
 
