@@ -87,17 +87,10 @@ async function introAnimations() {
         </div>
 
         <div class="status-wrapper">
-            {#await dataFetch then fetchedData}
-                {#if fetchedData.availablity_date == ""}
-                    <p class="large-text" bind:this={statusElem}>
-                        i am currently accepting freelance work, <br>you may reach me on my email.
-                    </p>
-                {:else}
-                    <p class="large-text" bind:this={statusElem}>
-                        Vous pouvez aussi me contacter sur mon téléphone: <br><br> 0788050719
-                    </p>
-                {/if}
-            {/await}
+            
+            <p class="large-text" bind:this={statusElem}>
+                Vous pouvez aussi me contacter sur mon téléphone: <br><br> 0788050719
+            </p>
             <a class="button large-text" bind:this={fullEmailLinkElem} href="stephanie.boulenger@gmail.com" target="_blank">0788050719</a>
         </div>
         
