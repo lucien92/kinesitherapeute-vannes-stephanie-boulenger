@@ -88,24 +88,24 @@ function section2IntroAnimations() {
 <div id="content-container" class="about" bind:this={aboutSection1Container}>
 	<div class="content-wrapper">
 		<h1 class="title" bind:this={title}>
-			The Name's<br>Musab
+			Qui <br>suis-je?
 		</h1>
 		<div bind:this={paragraph}>
 			<p class="paragraph">
-				I'm a web developer from British Columbia, Canada. I specialize in designing and developing web experiences<br><br>I work with organizations and individuals to create beautiful, responsive, and scalable web products tailor-made for them. Think we can make something great together? Let's talk over email.
+				Je suis une kinésithérapeute spécialisée dans le sport.<br><br>Je travaille à Vannes depuis décembre 2022 mais, originaire de Belgique, j'ai eu l'occasion de commencer à travailler là-bas ainsi qu'en Martinique.
 			</p>
 		</div>
 		<div class="social-button-wrapper">
 			<div bind:this={emailLink}>
-				<span class="button"><a href="mailto:musabhassan04@gmail.com" target="_blank" class="clickable sublink link">Email Me</a></span>
+				<span class="button"><a href="stéphanie.boulenger@gmail.com" target="_blank" class="clickable sublink link">Email Me</a></span>
 			</div>
 			<div bind:this={githubLink}>
-				<span class="button" bind:this={githubLink}><a href="https://github.com/Musab-Hassan" target="_blank" class="clickable sublink link">Github</a></span>
+				<span class="button" bind:this={githubLink}><a href="https://www.google.com/maps/place/85+Av.+de+Verdun,+56000+Vannes/@47.6608636,-2.7460113,17z/data=!3m1!4b1!4m6!3m5!1s0x48101e7cde0a86cd:0x6a1cd6d2e513a692!8m2!3d47.6608636!4d-2.7434364!16s%2Fg%2F11c12sy0lt" target="_blank" class="clickable sublink link">Maps</a></span>
 			</div>
 		</div>
 	</div>
 	<div class="profile-image" bind:this={profilePicContainer}>
-		{#await loadImage("assets/imgs/profile-photo.jpg") then src}
+		{#await loadImage("assets/imgs/38279400_10211790205373990_1635157576448475136_n.jpg") then src}
 			<img src="{src}" bind:this={profilePicture} alt="Musab's Cover" class="profile-pic">
 		{/await}
 	</div>
@@ -116,12 +116,12 @@ function section2IntroAnimations() {
 		<ul class="list first">
 			<li class="list-title">
 				<div in:letterSlideIn={{ initDelay: 400 }}>
-					Stuff i use a lot
+					Mes spécialités
 				</div>
 			</li>
 			<li>
 				<div in:letterSlideIn={{ initDelay: 550 }}>
-					Front-end
+					Le sport
 				</div>
 				<div 
 					class="flex-item" 
@@ -132,7 +132,7 @@ function section2IntroAnimations() {
 			</li>
 			<li>
 				<div in:letterSlideIn={{ initDelay: 650 }}>
-					Mobile
+					Les rotateurs
 				</div>
 				<div class="flex-item" in:maskSlideIn={{ delay: 700 }}>
 					<img src="assets/imgs/svg-icons/flutter.svg" alt="flutter">
@@ -142,7 +142,7 @@ function section2IntroAnimations() {
 			</li>
 			<li>
 				<div in:letterSlideIn={{ initDelay: 750 }}>
-					Back-end
+					Le dos
 				</div>
 				<div class="flex-item" in:maskSlideIn={{ delay: 800 }}>
 					<img src="assets/imgs/svg-icons/firebase.svg" alt="firebase">
@@ -153,7 +153,7 @@ function section2IntroAnimations() {
 			</li>
 			<li>
 				<div in:letterSlideIn={{ initDelay: 850 }}>
-					Design
+					La marche avec des ptits vieux
 				</div>
 				<div class="flex-item" 
 					in:maskSlideIn={{ delay: 900 }}>
@@ -165,12 +165,17 @@ function section2IntroAnimations() {
 		<ul class="list">
 			<li class="list-title">
 				<div in:letterSlideIn={{ initDelay: 400 }}>
-					awards
+					Diplômes et formations
 				</div>
 			</li>
 			<li>
 				<div in:letterSlideIn={{ initDelay: 550 }}>
-					1x — Awwwards Honors
+					Diplôme de kiné <br>de l'université de xxx
+				</div>
+			</li>
+			<li>
+				<div in:letterSlideIn={{ initDelay: 550 }}>
+					Formation en kiné <br>du sport
 				</div>
 			</li>
 		</ul>
