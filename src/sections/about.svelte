@@ -7,7 +7,7 @@ import { loadImage } from "../utils";
 
 // DOM Node binds
 let aboutSection1Container, aboutSection2Container;
-let githubLink, emailLink;
+let githubLink, emailLink, linkedinLink
 let profilePicContainer;
 let title, paragraph, profilePicture;
 
@@ -41,6 +41,7 @@ function section1IntroAnimations() {
 	const paragraphAnimate = maskSlideIn(paragraph, { duration: 1000, delay: 200 });
 	const link1Animate = maskSlideIn(emailLink, { delay: 400 });
 	const link2Animate = maskSlideIn(githubLink, { delay: 700 });
+	const link3Animate = maskSlideIn(linkedinLink, { delay: 600 });
 	const profilePictureAnimate = maskSlideIn(profilePicture, { duration: 1200,
 		maskStyles: [
 			{ property: "width", value: "100%"},
@@ -57,6 +58,7 @@ function section1IntroAnimations() {
 				paragraphAnimate.anime();
 				link1Animate.anime();
 				link2Animate.anime();
+				link3Animate.anime();
 				profilePictureAnimate.anime("easeInOutQuint");
 				
 				observer.disconnect();
@@ -97,10 +99,13 @@ function section2IntroAnimations() {
 		</div>
 		<div class="social-button-wrapper">
 			<div bind:this={emailLink}>
-				<span class="button"><a href="stéphanie.boulenger@gmail.com" target="_blank" class="clickable sublink link">Email Me</a></span>
+				<span class="button"><a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser" target="_blank" class="clickable sublink link">Email</a></span>
 			</div>
 			<div bind:this={githubLink}>
 				<span class="button" bind:this={githubLink}><a href="https://www.google.com/maps/place/85+Av.+de+Verdun,+56000+Vannes/@47.6608636,-2.7460113,17z/data=!3m1!4b1!4m6!3m5!1s0x48101e7cde0a86cd:0x6a1cd6d2e513a692!8m2!3d47.6608636!4d-2.7434364!16s%2Fg%2F11c12sy0lt" target="_blank" class="clickable sublink link">Maps</a></span>
+			</div>
+			<div bind:this={linkedinLink}>
+				<span class="button" bind:this={linkedinLink}><a href="https://www.linkedin.com/in/st%C3%A9phanie-boulenger-97352993/" target="_blank" class="clickable sublink link">Linkedin</a></span>
 			</div>
 		</div>
 	</div>
@@ -126,8 +131,8 @@ function section2IntroAnimations() {
 				<div 
 					class="flex-item" 
 					in:maskSlideIn={{ delay: 600 }}>
-					<img src="assets/imgs/svg-icons/angular.svg" alt="angular">
-					<img src="assets/imgs/svg-icons/svelte.svg" alt="svelte">
+					<img src="assets/imgs/svg-icons/sport.svg" alt="sport">
+					<img src="/assets/imgs/svg-icons/tennis.svg" alt="tennis">
 				</div>
 			</li>
 			<li>
@@ -135,9 +140,7 @@ function section2IntroAnimations() {
 					Les rotateurs
 				</div>
 				<div class="flex-item" in:maskSlideIn={{ delay: 700 }}>
-					<img src="assets/imgs/svg-icons/flutter.svg" alt="flutter">
-					<img src="assets/imgs/svg-icons/android.svg" alt="native android">
-					<img src="assets/imgs/svg-icons/iOS.svg" alt="native ios">
+					<img src="assets/imgs/svg-icons/rotateurs.svg" alt="rotateurs">
 				</div>
 			</li>
 			<li>
@@ -145,10 +148,7 @@ function section2IntroAnimations() {
 					Le dos
 				</div>
 				<div class="flex-item" in:maskSlideIn={{ delay: 800 }}>
-					<img src="assets/imgs/svg-icons/firebase.svg" alt="firebase">
-					<img src="assets/imgs/svg-icons/nodejs.svg" alt="node js">
-					<img src="assets/imgs/svg-icons/php.svg" alt="php">
-					<img src="assets/imgs/svg-icons/mysql.svg" alt="mySQL">
+					<img src="assets/imgs/svg-icons/dos.svg" alt="dos">
 				</div>
 			</li>
 			<li>
@@ -157,8 +157,7 @@ function section2IntroAnimations() {
 				</div>
 				<div class="flex-item" 
 					in:maskSlideIn={{ delay: 900 }}>
-					<img src="assets/imgs/svg-icons/illustrator.svg" alt="adobe illustrator">
-					<img src="assets/imgs/svg-icons/xd.svg" alt="adobe xd">
+					<img src="assets/imgs/svg-icons/vieux.svg" alt="vieux">
 				</div>
 			</li>
 		</ul>
